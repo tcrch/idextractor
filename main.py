@@ -1,6 +1,6 @@
 import re
 num = 0
-with open("classiccrazy_raw.txt", "r", encoding='utf-8')as har:
+with open("raw.txt", "r", encoding='utf-8')as har:
     for line in har:
         ids = re.findall('/avatars/([0-9]+)', line)
         r = open("output.txt", "a")
